@@ -1,0 +1,67 @@
+[debug] [2022-06-15T13:50:11.049Z] ----------------------------------------------------------------------
+[debug] [2022-06-15T13:50:11.051Z] Command:       /home/aejaz/.nvm/versions/node/v17.4.0/bin/node /home/aejaz/.nvm/versions/node/v17.4.0/bin/firebase functions:shell
+[debug] [2022-06-15T13:50:11.052Z] CLI Version:   11.1.0
+[debug] [2022-06-15T13:50:11.052Z] Platform:      linux
+[debug] [2022-06-15T13:50:11.052Z] Node Version:  v17.4.0
+[debug] [2022-06-15T13:50:11.053Z] Time:          Wed Jun 15 2022 19:20:11 GMT+0530 (India Standard Time)
+[debug] [2022-06-15T13:50:11.053Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-15T13:50:11.132Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-15T13:50:11.132Z] > authorizing via signed-in user (arquam007@gmail.com)
+[debug] [2022-06-15T13:50:11.132Z] [iam] checking project e-kart-19d3c for permissions ["firebase.projects.get"]
+[debug] [2022-06-15T13:50:11.135Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-19d3c:testIamPermissions [none]
+[debug] [2022-06-15T13:50:11.135Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-19d3c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-15T13:50:12.874Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-19d3c:testIamPermissions 200
+[debug] [2022-06-15T13:50:12.874Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-19d3c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "17". Using node@17 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"17\". Using node@17 from host."}}
+[debug] [2022-06-15T13:50:12.901Z] defaultcredentials: writing to file /home/aejaz/.config/firebase/arquam007_gmail_com_application_default_credentials.json
+[debug] [2022-06-15T13:50:12.903Z] DEBUG: Setting GAC to /home/aejaz/.config/firebase/arquam007_gmail_com_application_default_credentials.json
+[debug] [2022-06-15T13:50:12.904Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-kart-19d3c/adminSdkConfig [none]
+[debug] [2022-06-15T13:50:13.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-kart-19d3c/adminSdkConfig 200
+[debug] [2022-06-15T13:50:13.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-kart-19d3c/adminSdkConfig {"projectId":"e-kart-19d3c","storageBucket":"e-kart-19d3c.appspot.com","locationId":"asia-south1"}
+[debug] [2022-06-15T13:50:13.600Z] [functions] Watching "/mnt/e/E-Kart-React/Amazon-Clone/functions" for Cloud Functions...
+[debug] [2022-06-15T13:50:13.613Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2022-06-15T13:50:15.230Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@stripe/react-stripe-js": "^1.7.0",
+    "@stripe/stripe-js": "^1.26.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "http-proxy-middleware": "^2.0.4",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-15T13:50:15.231Z] Building nodejs source
+[debug] [2022-06-15T13:50:15.232Z] Analyzing nodejs backend spec
+[debug] [2022-06-15T13:50:15.234Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-15T13:50:17.744Z] Serving at port 9005
+
+[debug] [2022-06-15T13:50:20.567Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-15T13:50:20.580Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-15T13:50:20.588Z] [functions[us-central1-api]] http function initialized (http://localhost:5000/e-kart-19d3c/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] ⚠  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 

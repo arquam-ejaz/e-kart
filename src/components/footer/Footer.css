@@ -1,0 +1,203 @@
+.footer__button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  
+    background-color: #37475a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .footer__button > span {
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    line-height: 19px;
+    font-size: 13px;
+  }
+  
+  .footerSecondary {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  
+    background-color: #232f3e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  hr {
+    border: none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    box-shadow: 0 15px 10px -20px #3a4553;
+    margin: -50px auto 20px;
+    /* 1px solid #3a4553; */
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .top {
+    background: #37475a;
+    display: "flex";
+    justify-content: "center";
+    align-items: "center";
+  }
+  
+  footer .top a {
+    padding: 17px;
+    display: inline-block;
+  }
+  
+  footer .top a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .top:hover {
+    background: #485769;
+  }
+  
+  footer .center {
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+  
+  footer ul {
+    margin: 30px 40px 30px 0;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+  }
+  
+  footer .middle {
+    background: #232f3e;
+  }
+  
+  footer .middle h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  footer .middle li {
+    position: relative;
+  }
+  
+  footer .middle .logo {
+    background: transparent no-repeat 0 0;
+    background-size: 76px;
+    width: 76px;
+    /* height: 23px; */
+    /* display: block; */
+    border: none !important;
+    margin-right: 60px;
+    /* position: absolute;
+    top: -14px;
+    left: -120px; */
+  }
+  
+  footer .middle a {
+    color: #ddd;
+    font-size: 13px;
+    display: block;
+    padding: 5px 0;
+    font-weight: 500;
+  }
+  
+  footer ul.copy {
+    display: flex;
+    /* width: 100%; */
+  }
+  
+  footer ul.copy li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #999;
+    font-size: 11px;
+  }
+  
+  footer .middle .copy {
+    border-top: 1px solid #3a4553;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer .middle .copy a {
+    padding: 10px 30px 10px 10px;
+    color: #ccc;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    margin-top: 13px;
+    
+  }
+  .footer .middle .copy .href {
+    border: none;
+  }
+  footer .middle .copy a:hover {
+    text-decoration: none;
+    border-color: #8d9096;
+  }
+  
+  footer .middle .fa-globe {
+    margin-right: 5px;
+  }
+  
+  footer .middle .flag-icon-us {
+    background-image: url("data:image/png;base64,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");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 1em;
+    width: 1.33333333em;
+    margin-right: 7px;
+    background-position: 0 2px;
+  }
+  
+  footer .bottom {
+    background: #131a22;
+  }
+  
+  footer .bottom ul {
+    margin-right: 0;
+  }
+  
+  footer .bottom li {
+    margin-bottom: 15px;
+  }
+  
+  footer .bottom a {
+    color: #ddd;
+    font-size: 11px;
+    line-height: 115%;
+  }
+  
+  footer .bottom a span {
+    color: #999;
+    font-size: 10px;
+    line-height: 115%;
+  }
