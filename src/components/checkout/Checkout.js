@@ -6,36 +6,36 @@ import { useStateValue } from '../StateProvider'
 import img from '../../images/ads.jpg'
 
 function Checkout() {
-  const [{basket, user}] = useStateValue();
+  const [{ basket, user }] = useStateValue();
   return (
     <div className='checkout'>
 
-        <div className='checkout__left'>
+      <div className='checkout__left'>
 
-          <img className='checkout__ad'
+        <img className='checkout__ad'
           src={img}
-          alt=''/>
-         
-          <div>
-          <h3>Hello {user ? user.email : "Guest"}</h3>
-            <h2 className='checkout__title'>{basket?.length ? "Your shopping basket" : "Basket empty"}</h2>
-            {basket.map(item => (
-              <CheckoutProduct key={item.id}
+          alt='' />
+
+        <div>
+          <h3>Hello {user ? user.email : (window.walletConnection.isSignedIn() ? window.accountId : "Guest")}</h3>
+          <h2 className='checkout__title'>{basket?.length ? "Your shopping basket" : "Basket empty"}</h2>
+          {basket.map(item => (
+            <CheckoutProduct key={item.id}
               id={item.id}
               title={item.title}
               image={item.image}
               price={item.price}
               rating={item.rating}
-              />
-            ))
+            />
+          ))
           }
-          </div>
-
         </div>
 
-        <div className='checkout__right'>
-          <Subtotal />
-        </div>
+      </div>
+
+      <div className='checkout__right'>
+        <Subtotal />
+      </div>
 
     </div>
   )

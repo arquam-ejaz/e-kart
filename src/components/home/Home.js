@@ -75,14 +75,14 @@ function Home() {
           <Product
             id="1"
             title="Chefman Multifunctional Digital Air Fryer+ Rotisserie, Dehydrator, Convection Oven, 17 Touch Screen Presets Fry, Roast, Dehydrate & Bake, Auto Shutoff, Accessories Included, XL 10L Family Size, Black"
-            price={119.99}
+            price={1190.99}
             image={img1}
             rating={4}
           />
            <Product
             id="8"
             title="Neutrogena Makeup Remover Cleansing Face Wipes, Daily Cleansing Facial Towelettes to Remove Waterproof Makeup and Mascara, Alcohol-Free, Value Twin Pack, 25 Count, 2 Pack"
-            price={17.98}
+            price={170.98}
             image={img8}
             rating={4}
           />
@@ -93,7 +93,7 @@ function Home() {
         <Product
             id="8"
             title="Redragon S101 Wired Gaming Keyboard and Mouse Combo RGB Backlit Gaming Keyboard with Multimedia Keys Wrist Rest and Red Backlit Gaming Mouse 3200 DPI for Windows PC Gamers (Black)"
-            price={35.99}
+            price={350.99}
             image={img7}
             rating={5}
           />
@@ -101,14 +101,14 @@ function Home() {
             <Product
             id="5"
             title="Pokemon Pikachu 8 Plush Officially Licensed and Stuffed Animal Material"
-            price={21.95}
+            price={210.95}
             image={img5}
             rating={4}
           />
             <Product
             id="3"
             title="Razer Blade 15 Gaming Laptop: NVIDIA GeForce RTX 3070 Ti - 12th Gen Intel 14-Core i7 CPU - 15.6” FHD 360Hz - 16GB DDR5 RAM - 1TB PCIe SSD - Windows 11 - CNC Aluminum - Chroma RGB - Thunderbolt 4"
-            price={2999.99}
+            price={29990.99}
             image={img3}
             rating={5}
           />
@@ -121,21 +121,21 @@ function Home() {
         <Product
             id="4"
             title="Apple iPhone 12 Pro Max, 128GB, Pacific Blue - Unlocked (Renewed Premium)"
-            price={979.0}
+            price={97900.0}
             image={img4}
             rating={3}
           />
           <Product
             id="9"
             title="Tech-A Dancing Cactus Plush Baby Toy - Tiktok Singing Electronic Repeating Songs - Wriggle Dancing Cactus for Kids (Dancing Cactus Hawaii Style)"
-            price={12.75}
+            price={120.75}
             image={img9}
             rating={4}
           />
           <Product
             id="2"
             title="Bass GH Men's Pullover Crew Sweatshirt Volcom Insulate Pullover Fleece"
-            price={26.98}
+            price={260.98}
             image={img2}
             rating={4}
           />
@@ -148,7 +148,7 @@ function Home() {
           <Product
             id="6"
             title="LG OLED C1 Series 65” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED65C1PUB, 2021)"
-            price={1700.0}
+            price={17000.0}
             image={img6}
             rating={5}
           />

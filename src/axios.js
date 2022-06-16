@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    //the api url
-    baseURL: "http://localhost:5001/e-kart-19d3c/asia-south1/api"
+    baseURL: "http://127.0.0.1:5001/e-kart-19d3c/us-central1/api"
 });
 
 export default instance;

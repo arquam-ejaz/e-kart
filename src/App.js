@@ -18,7 +18,7 @@ import Footer from "./components/footer/Footer";
 
 
 const promise = loadStripe(
-  "pk_test_51Kk7RtKTwVvKkRx1BMtxPor8essIbr5IQPDN9FYnm2PeYRipfSjUErMQBbSJfUsg1Rp97BujsDWB0mujeVvFsgvI00AacY0wXN"
+  "pk_test_51KHSU5SJ9BhmRQKCzlTsRszoNhwzfvwzCtKsfxjKVMUEnCGZuC3sbg7OlZ2tfMKO7pzUI4xtuJ39J718tpEBkqcN00C3k3nVTB"
 );
 
 
