@@ -93,14 +93,18 @@ function Payment() {
 
   const handleCryptoPayment = async (e) => {
     e.preventDefault();
-    let amountInINR = getBasketTotal(basket);
-    let amountInNEAR = amountInINR / 300;
-    let amountInYoctoNEAR = utils.format.parseNearAmount(amountInNEAR.toString());
-    console.log(amountInYoctoNEAR);
-    window.localStorage.setItem('basket', JSON.stringify(basket));
-    window.localStorage.setItem('amount', JSON.stringify(getBasketTotal(basket) * 100));
-    window.localStorage.setItem('timestamp', JSON.stringify(moment().unix()));
-    await window.account.sendMoney("e-kart.testnet", new BN(amountInYoctoNEAR.toString()));
+    if (window.walletConnection.isSignedIn()) {
+      let amountInINR = getBasketTotal(basket);
+      let amountInNEAR = amountInINR / 300;
+      let amountInYoctoNEAR = utils.format.parseNearAmount(amountInNEAR.toString());
+      console.log(amountInYoctoNEAR);
+      window.localStorage.setItem('basket', JSON.stringify(basket));
+      window.localStorage.setItem('amount', JSON.stringify(getBasketTotal(basket) * 100));
+      window.localStorage.setItem('timestamp', JSON.stringify(moment().unix()));
+      await window.account.sendMoney("e-kart.testnet", new BN(amountInYoctoNEAR.toString()));
+    } else{
+      alert("Please sign in using WEB3 wallet to pay with crypto");
+    }
   }
 
   const handleSubmit = async (e) => {

@@ -125,7 +125,7 @@ function Footer() {
 
           <div className="centered">
             <ul className="copy">
-              <li>
+              {/* <li>
                 <a href="#" className="href">
                 <img
                   className="logo"
@@ -133,7 +133,7 @@ function Footer() {
                   alt=""
                 />
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="select">
                   <i className="fa fa-globe" aria-hidden="true"></i> English
